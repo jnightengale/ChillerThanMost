@@ -24,6 +24,9 @@
       --green: #4CAF50;
       --green-hover: #43A047;
       --green-glow: rgba(76, 175, 80, 0.25);
+      --orange: #F97316;
+      --orange-hover: #EA6A0E;
+      --orange-glow: rgba(249, 115, 22, 0.25);
       --text: #1A2332;
       --text-mid: #4A5568;
       --text-light: #718096;
@@ -89,7 +92,7 @@
       display: block;
       width: 24px;
       height: 2px;
-      background: var(--green);
+      background: var(--orange);
       border-radius: 1px;
     }
 
@@ -278,7 +281,7 @@
     .phone-link svg {
       width: 16px;
       height: 16px;
-      color: var(--green);
+      color: var(--orange);
     }
 
     /* ═══════════════════════════════════════════════
@@ -301,7 +304,7 @@
       inset: 0;
       background:
         radial-gradient(ellipse 80% 60% at 70% 40%, rgba(58, 110, 165, 0.2) 0%, transparent 70%),
-        radial-gradient(ellipse 60% 50% at 20% 80%, rgba(76, 175, 80, 0.08) 0%, transparent 60%);
+        radial-gradient(ellipse 60% 50% at 20% 80%, rgba(249, 115, 22, 0.06) 0%, transparent 60%);
     }
 
     /* Subtle grid pattern */
@@ -334,12 +337,12 @@
       align-items: center;
       gap: 8px;
       padding: 6px 14px 6px 8px;
-      background: rgba(76, 175, 80, 0.12);
-      border: 1px solid rgba(76, 175, 80, 0.2);
+      background: rgba(249, 115, 22, 0.12);
+      border: 1px solid rgba(249, 115, 22, 0.25);
       border-radius: 100px;
       font-size: 0.8rem;
       font-weight: 600;
-      color: var(--green);
+      color: var(--orange);
       margin-bottom: 28px;
       animation: fadeInUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.1s both;
     }
@@ -347,7 +350,7 @@
     .hero-badge .dot {
       width: 8px;
       height: 8px;
-      background: var(--green);
+      background: var(--orange);
       border-radius: 50%;
       animation: pulse-dot 2s ease-in-out infinite;
     }
@@ -378,7 +381,7 @@
       left: 0;
       right: 0;
       height: 4px;
-      background: var(--green);
+      background: var(--orange);
       border-radius: 2px;
       opacity: 0.6;
     }
@@ -397,6 +400,16 @@
       gap: 14px;
       flex-wrap: wrap;
       animation: fadeInUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.4s both;
+    }
+
+    .hero-actions .btn-primary {
+      background: var(--orange);
+      box-shadow: 0 2px 8px rgba(249, 115, 22, 0.3);
+    }
+
+    .hero-actions .btn-primary:hover {
+      background: var(--orange-hover);
+      box-shadow: 0 0 0 3px var(--orange-glow), 0 4px 16px rgba(249, 115, 22, 0.2);
     }
 
     .hero-actions .btn-outline {
@@ -728,12 +741,12 @@
 
     .service-icon.heat {
       background: #FFF3E0;
-      color: #E65100;
+      color: var(--orange);
     }
 
     .service-icon.repair {
-      background: #E8F5E9;
-      color: var(--green);
+      background: #FFF3E0;
+      color: var(--orange);
     }
 
     .service-icon.maintain {
@@ -786,7 +799,7 @@
       inset: 0;
       background:
         radial-gradient(ellipse 50% 50% at 80% 20%, rgba(58, 110, 165, 0.15) 0%, transparent 70%),
-        radial-gradient(ellipse 40% 40% at 10% 80%, rgba(76, 175, 80, 0.06) 0%, transparent 60%);
+        radial-gradient(ellipse 40% 40% at 10% 80%, rgba(249, 115, 22, 0.06) 0%, transparent 60%);
     }
 
     .why-us .section-header h2 {
@@ -798,7 +811,7 @@
     }
 
     .why-us .section-label {
-      color: var(--green);
+      color: var(--orange);
     }
 
     .features-grid {
@@ -828,8 +841,8 @@
       width: 44px;
       height: 44px;
       border-radius: 10px;
-      background: rgba(76, 175, 80, 0.12);
-      color: var(--green);
+      background: rgba(249, 115, 22, 0.12);
+      color: var(--orange);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -879,7 +892,7 @@
     .testimonial-stars svg {
       width: 24px;
       height: 24px;
-      color: #F9A825;
+      color: var(--orange);
     }
 
     .testimonial-quote {
@@ -975,6 +988,16 @@
       justify-content: center;
       gap: 14px;
       flex-wrap: wrap;
+    }
+
+    .cta-actions .btn-primary {
+      background: var(--orange);
+      box-shadow: 0 2px 8px rgba(249, 115, 22, 0.3);
+    }
+
+    .cta-actions .btn-primary:hover {
+      background: var(--orange-hover);
+      box-shadow: 0 0 0 3px var(--orange-glow), 0 4px 16px rgba(249, 115, 22, 0.2);
     }
 
     .cta-actions .btn-outline {
@@ -1193,7 +1216,7 @@
       <div class="hero-left">
         <div class="hero-badge">
           <span class="dot"></span>
-          Now Serving the Greater Area
+          Now Serving the Greater Hampton Roads Area
         </div>
         <h1>Your Comfort.<br>Our <em>Expertise</em>.</h1>
         <p class="hero-description">
