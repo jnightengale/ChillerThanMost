@@ -164,14 +164,24 @@
 
     .nav-links a {
       text-decoration: none;
-      color: var(--text-mid);
+      color: rgba(255, 255, 255, 0.9);
       font-size: 0.92rem;
       font-weight: 500;
-      transition: color 0.2s;
+      transition: color 0.4s, text-shadow 0.4s;
       position: relative;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
     }
 
     .nav-links a:hover {
+      color: var(--white);
+    }
+
+    .navbar.scrolled .nav-links a {
+      color: var(--text-mid);
+      text-shadow: none;
+    }
+
+    .navbar.scrolled .nav-links a:hover {
       color: var(--steel);
     }
 
@@ -253,9 +263,16 @@
       align-items: center;
       gap: 6px;
       text-decoration: none;
-      color: var(--text);
+      color: var(--white);
       font-weight: 600;
       font-size: 0.92rem;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+      transition: color 0.4s, text-shadow 0.4s;
+    }
+
+    .navbar.scrolled .phone-link {
+      color: var(--text);
+      text-shadow: none;
     }
 
     .phone-link svg {
@@ -1159,11 +1176,11 @@
       </ul>
 
       <div class="nav-cta">
-        <a href="tel:+15551234567" class="phone-link">
+        <a href="tel:+17578499074" class="phone-link">
           <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
           </svg>
-          (555) 123-4567
+          (757) 849-9074
         </a>
         <a href="#contact" class="btn btn-primary">Get a Quote</a>
       </div>
@@ -1269,8 +1286,8 @@
     <div class="container">
       <div class="section-header reveal">
         <div class="section-label">What We Do</div>
-        <h2>Complete Climate Control</h2>
-        <p>From emergency repairs to full system installations, we handle every aspect of your home's comfort with precision and care.</p>
+        <h2>Residential &amp; Commercial Climate Control</h2>
+        <p>From emergency repairs to full system installations, we handle every aspect of your home or business's comfort with precision and care.</p>
       </div>
 
       <div class="services-grid">
@@ -1443,7 +1460,7 @@
           </a>
           <a href="#services" class="btn btn-outline btn-large">Learn More</a>
         </div>
-        <a href="tel:+15551234567" class="cta-phone">(555) 123-4567</a>
+        <a href="tel:+17578499074" class="cta-phone">(757) 849-9074</a>
       </div>
     </div>
   </section>
@@ -1454,16 +1471,16 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <img src="assets/logo.png" alt="Chiller Than Most HVAC" style="height: 64px; width: auto; object-fit: contain; margin-bottom: 12px;">
-          <p>Family-owned heating and cooling &mdash; 12 years of hands-on expertise, honest pricing, and the personal care your home deserves.</p>
+          <p>Family-owned heating and cooling &mdash; 12 years of hands-on expertise serving homes and businesses with honest pricing and personal care.</p>
         </div>
         <div>
           <h4>Services</h4>
           <ul>
-            <li><a href="#">AC Installation</a></li>
-            <li><a href="#">Heating Repair</a></li>
+            <li><a href="#">Residential HVAC</a></li>
+            <li><a href="#">Commercial HVAC</a></li>
+            <li><a href="#">AC Installation &amp; Repair</a></li>
+            <li><a href="#">Heating Systems</a></li>
             <li><a href="#">Maintenance Plans</a></li>
-            <li><a href="#">Air Quality</a></li>
-            <li><a href="#">Ductwork</a></li>
           </ul>
         </div>
         <div>
@@ -1478,7 +1495,7 @@
         <div>
           <h4>Contact</h4>
           <ul>
-            <li><a href="tel:+15551234567">(555) 123-4567</a></li>
+            <li><a href="tel:+17578499074">(757) 849-9074</a></li>
             <li><a href="mailto:doug@chillerthanmost.com">doug@chillerthanmost.com</a></li>
             <li><a href="#">Service Area, ST</a></li>
           </ul>
