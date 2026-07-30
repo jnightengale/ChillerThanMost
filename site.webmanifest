@@ -1,0 +1,14 @@
+{
+  "name": "Chiller Than Most HVAC",
+  "short_name": "Chiller Than Most",
+  "description": "Family-owned HVAC serving the Greater Hampton Roads, VA area.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#040E26",
+  "theme_color": "#2AADDB",
+  "icons": [
+    { "src": "/favicon-32.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "/assets/logo.png", "sizes": "1024x1024", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
